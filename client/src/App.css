@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --derm-primary: #0e3b43;      /* Deep Clinical Teal / Forest */
+  --derm-accent: #c5a880;       /* Luxury Champagne Gold */
+  --derm-soft-bg: #f8fafb;      /* Clean Medical Ice White */
+  --derm-card-bg: #ffffff;
+  --derm-text-dark: #1a2b2f;
+  --derm-text-muted: #5e7175;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--derm-soft-bg);
+  color: var(--derm-text-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism & Soft Cards */
+.kaya-card {
+  background: #ffffff;
+  border: 1px solid rgba(14, 59, 67, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(14, 59, 67, 0.04);
+  transition: all 0.3s ease;
+}
+
+.kaya-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(14, 59, 67, 0.08);
+}
+
+.btn-derm-primary {
+  background-color: var(--derm-primary);
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-derm-primary:hover {
+  background-color: #164f59;
+  color: #ffffff;
+}
+
+.btn-derm-gold {
+  background: linear-gradient(135deg, #c5a880, #b29367);
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 8px 20px rgba(197, 168, 128, 0.3);
+}
+
+.btn-derm-gold:hover {
+  background: linear-gradient(135deg, #b29367, #a18053);
+  color: #ffffff;
+}
+
+/* --- Clinic Dashboard UI Kit --- */
+.dashboard-wrapper {
+  background-color: #f4f7f9;
+  min-height: calc(100vh - 76px);
+  padding: 2rem 0 4rem 0;
+}
+
+.dash-header-card {
+  background: linear-gradient(135deg, #0e3b43 0%, #165662 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(14, 59, 67, 0.12);
+  margin-bottom: 2rem;
+}
+
+.dash-tab-pill {
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #d2dfe2;
+  background: #ffffff;
+  color: #0e3b43;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-tab-pill:hover {
+  background: #eef5f6;
+  color: #0e3b43;
+}
+
+.dash-tab-pill.active {
+  background: #0e3b43;
+  color: #ffffff;
+  border-color: #0e3b43;
+  box-shadow: 0 6px 16px rgba(14, 59, 67, 0.25);
+}
+
+.dash-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2ecee;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+  padding: 1.75rem;
+}
+
+.dash-stat-badge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+}
+
+.empty-state-box {
+  background: #ffffff;
+  border: 2px dashed #d0e0e3;
+  border-radius: 18px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+}

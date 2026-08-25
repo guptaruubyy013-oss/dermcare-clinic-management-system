@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --kaya-emerald: #0b2e2b;
+  --kaya-sage: #2a5a52;
+  --kaya-gold: #c5a880;
+  --kaya-soft-gold: #f8f4ec;
+  --kaya-bg: #fcfbf9;
+  --kaya-peach: #fde5d2;
+  --kaya-peach-border: #f7d5bd;
+  --kaya-text: #1a202c;
+  --kaya-muted: #5a6a72;
+}
+
+.kaya-home-root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--kaya-bg);
+  color: var(--kaya-text);
+  overflow-x: hidden;
+}
+
+.kaya-serif {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+}
+
+/* ===================================================
+   1. Hero Banner & Fast Consultation Form
+   =================================================== */
+.kaya-hero-banner {
+  background: linear-gradient(135deg, #072220 0%, #0e3b37 60%, #17534d 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 32px 32px;
+}
+
+.kaya-hero-banner::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(197, 168, 128, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.kaya-gold-pill {
+  background: rgba(197, 168, 128, 0.15);
+  border: 1px solid rgba(197, 168, 128, 0.4);
+  color: #ecd7ba;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.kaya-quick-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  border: 1px solid #efe8dc;
+}
+
+/* ===================================================
+   2. Kaya 6-Card Peach Promo Grid
+   =================================================== */
+.kaya-promo-card {
+  background: var(--kaya-peach);
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--kaya-peach-border);
+  box-shadow: 0 4px 20px rgba(191, 123, 72, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kaya-promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(191, 123, 72, 0.18);
+}
+
+.promo-left-content {
+  flex: 1.1;
+  padding: 1.8rem 1.2rem 1.8rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.promo-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.38rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.promo-subtitle {
+  font-size: 0.86rem;
+  font-style: italic;
+  color: #3b2a20;
+  margin-bottom: 0.8rem;
+}
+
+.promo-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d8b8a0;
+  margin-bottom: 0.8rem;
+}
+
+.promo-discount {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.3px;
+}
+
+.btn-promo-action {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 0.45rem 1.4rem;
+  border-radius: 6px;
+  border: 1px solid #1a1a1a;
+  text-decoration: none;
+  display: inline-block;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.btn-promo-action:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.promo-right-visual {
+  flex: 0.9;
+  position: relative;
+  overflow: hidden;
+  clip-path: ellipse(118% 100% at 100% 50%);
+  background-color: var(--kaya-peach-border);
+}
+
+.promo-right-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===================================================
+   3. AI Skin Analyser Full-Width Banner & Face Mesh
+   =================================================== */
+.kaya-ai-skin-banner {
+  background: #fbf8f5;
+  border-top: 1px solid #ebdccb;
+  border-bottom: 1px solid #ebdccb;
+  padding: 3.5rem 0;
+}
+
+.ai-tag-beige {
+  background-color: #d8c0a8;
+  color: #382412;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 16px;
+}
+
+.ai-tag-soft {
+  background-color: #eadbce;
+  color: #382412;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 16px;
+}
+
+.btn-ai-start {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.65rem 2.2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-ai-start:hover {
+  opacity: 0.85;
+  color: #ffffff;
+}
+
+.ai-scanner-visual-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 380px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  background: #f1ebe4;
+}
+
+.ai-scanner-base-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: contrast(1.03) brightness(0.98);
+}
+
+.ai-face-mesh-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@keyframes aiPulse {
+  0% {
+    stroke-opacity: 0.6;
+  }
+  50% {
+    stroke-opacity: 1;
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-opacity: 0.6;
+  }
+}
+
+.ai-pulse-path {
+  animation: aiPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 5%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 85%;
+    opacity: 0;
+  }
+}
+
+.ai-laser-scanner-line {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff, #c5a880, transparent);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(197, 168, 128, 0.6);
+  pointer-events: none;
+  animation: scanLaser 3.5s infinite linear;
+}
+
+/* ===================================================
+   4. Concern Visual Circles & Procedure Cards
+   =================================================== */
+.concern-circle-card {
+  text-decoration: none;
+  color: var(--kaya-text);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.concern-circle-img-wrap {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  border: 3px solid #ebdccb;
+  box-shadow: 0 8px 20px rgba(11, 46, 43, 0.08);
+  transition: all 0.3s ease;
+}
+
+.concern-circle-card:hover .concern-circle-img-wrap {
+  transform: translateY(-6px) scale(1.05);
+  border-color: var(--kaya-sage);
+  box-shadow: 0 12px 25px rgba(11, 46, 43, 0.18);
+}
+
+.kaya-proc-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #ebdccb;
+  box-shadow: 0 10px 30px rgba(11, 46, 43, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kaya-proc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(11, 46, 43, 0.1);
+}
+
+.proc-img-box {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+}

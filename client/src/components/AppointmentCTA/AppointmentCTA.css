@@ -1,0 +1,291 @@
+.appointment-cta {
+    padding: 90px 0;
+
+    background: #0b83ad;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.cta-content {
+    position: relative;
+
+    min-height: 320px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 55px 65px;
+
+    border-radius: 28px;
+
+    background: #08779e;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.cta-text {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+.cta-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.cta-text h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+}
+
+.cta-text h2 span {
+    color: #d8f5fb;
+}
+
+.cta-text p {
+    max-width: 570px;
+
+    margin: 18px 0 28px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.cta-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.cta-primary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 22px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #08779e;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-phone {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.cta-phone > svg {
+    font-size: 18px;
+}
+
+.cta-phone span {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.cta-phone small {
+    margin-bottom: 2px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   DECORATION
+========================= */
+
+.cta-decoration {
+    position: absolute;
+
+    right: 70px;
+
+    width: 280px;
+    height: 280px;
+}
+
+.cta-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.circle-one {
+    width: 280px;
+    height: 280px;
+
+    top: 0;
+    left: 0;
+}
+
+.circle-two {
+    width: 190px;
+    height: 190px;
+
+    top: 45px;
+    left: 45px;
+}
+
+.cta-icon {
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
+
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #0b83ad;
+
+    font-size: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .cta-content {
+        padding: 45px;
+    }
+
+    .cta-decoration {
+        right: -80px;
+
+        opacity: 0.5;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .appointment-cta {
+        padding: 65px 0;
+    }
+
+    .cta-content {
+        padding: 40px 25px;
+
+        min-height: auto;
+    }
+
+    .cta-text h2 {
+        font-size: 32px;
+    }
+
+    .cta-decoration {
+        display: none;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+}

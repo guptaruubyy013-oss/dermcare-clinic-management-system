@@ -1,0 +1,243 @@
+.treatment-journey {
+    padding: 100px 0;
+    background: #f7fbfd;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.journey-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 75px;
+}
+
+.journey-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #0b83ad;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.journey-heading h2 {
+    margin: 0;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    color: #172b3a;
+}
+
+.journey-heading h2 span {
+    color: #0b83ad;
+}
+
+.journey-heading p {
+    margin-top: 20px;
+
+    color: #667781;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   JOURNEY CONTAINER
+========================= */
+
+.journey-container {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+
+    position: relative;
+}
+
+
+/* =========================
+   STEP
+========================= */
+
+.journey-step {
+    position: relative;
+
+    text-align: center;
+
+    padding: 0 10px;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.journey-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    color: #0b83ad;
+
+    font-size: 28px;
+
+    border: 2px solid #dceff5;
+
+    box-shadow: 0 8px 25px rgba(11, 131, 173, 0.1);
+
+    position: relative;
+
+    z-index: 2;
+
+    transition: all 0.3s ease;
+}
+
+.journey-step:hover .journey-icon {
+    transform: translateY(-8px);
+
+    background: #0b83ad;
+
+    color: white;
+
+    border-color: #0b83ad;
+
+    box-shadow: 0 15px 30px rgba(11, 131, 173, 0.2);
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.journey-number {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #0b83ad;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.journey-content h3 {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+
+    color: #172b3a;
+}
+
+.journey-content p {
+    margin: 0;
+
+    color: #71808a;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONNECTING LINE
+========================= */
+
+.journey-line {
+    position: absolute;
+
+    top: 37px;
+
+    left: calc(50% + 38px);
+
+    width: calc(100% - 76px);
+
+    height: 2px;
+
+    background: #dceff5;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .journey-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 50px;
+    }
+
+    .journey-line {
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .treatment-journey {
+        padding: 70px 0;
+    }
+
+    .journey-heading {
+        margin-bottom: 50px;
+    }
+
+    .journey-heading h2 {
+        font-size: 32px;
+    }
+
+    .journey-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .journey-step {
+        max-width: 400px;
+
+        margin: auto;
+    }
+
+}
