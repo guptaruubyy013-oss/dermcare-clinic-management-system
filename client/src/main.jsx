@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/dermcare-clinic-management-system">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
